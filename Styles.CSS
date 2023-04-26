@@ -21,7 +21,7 @@ ul {
 }
 
 img{
-    border-radius: 10%;
+    border-radius: 30px;
 }
 
 footer{
@@ -49,16 +49,13 @@ footer{
 .nav-brand {
     width: 60px;
     margin-left: 10px;
+    border-radius: 5px;
 }
 
 .nav-main img.nav-brand:hover {
     border-bottom: 2px solid #f1d989;
 }
-/*
-.nav-main ul{
-    display: flex;
-}
-*/
+
 .nav-main ul li{
     padding: 10px;
 }
@@ -108,7 +105,7 @@ footer{
 }
 
 .opciones-cards a{
-    margin: 15px;
+    margin: 25px;
     font-size: 10px;
     padding: 10px 0;
     text-transform: uppercase;
@@ -122,7 +119,7 @@ footer{
 }
 
 .cards{
-    border-radius: 20%;
+    border-radius: 50px;
     padding: 10px;
     background-color: #ac4a00;
 }
