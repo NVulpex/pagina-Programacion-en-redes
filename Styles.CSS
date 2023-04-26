@@ -86,7 +86,7 @@ footer{
     float: left;
 }
 
-.nav-menu li ul{
+.nav-menu ul{
     display: none;
     position: absolute;
     min-width: 140px;
@@ -96,7 +96,8 @@ footer{
     background-color: #594433;
     display: block;
 }
-.nav-main ul li a:hover{
+
+.nav-main a:hover{
     border-bottom: 2px solid #f1d989;
     background-color: #605348;
 }
