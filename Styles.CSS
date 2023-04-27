@@ -97,6 +97,10 @@ footer{
 .nav-menu li:hover >ul{
     background-color: #594433;
     display: block;
+}                                                                                                                                                                       
+
+.nav-menu a:hover{
+    border-bottom: 2px solid #f1d989;
 }
 
 .nav-main ul.nav-menu {
