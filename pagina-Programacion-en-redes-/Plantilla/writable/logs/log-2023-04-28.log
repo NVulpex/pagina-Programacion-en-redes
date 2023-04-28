@@ -1,0 +1,27 @@
+CRITICAL - 2023-04-28 15:29:29 --> Invalid file: "contacto/Index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contacto/Index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('contacto/Index', [], true)
+ 3 APPPATH\Controllers\ContactoController.php(9): view('contacto/Index')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 15:30:03 --> Invalid file: "contacto/Index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('contacto/Index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('contacto/Index', [], true)
+ 3 APPPATH\Controllers\ContactoController.php(9): view('contacto/Index')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-28 17:14:02 --> Invalid file: "views/Index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/Index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('views/Index', [], true)
+ 3 APPPATH\Controllers\ContactoController.php(9): view('views/Index')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
