@@ -1,4 +1,5 @@
 
+
 create table usuarios(
 id_usuario int primary key auto_increment not null,
 nom_usuario varchar(45) not null,
@@ -26,7 +27,7 @@ foreign key (id_usu) references usuarios(id_usuario)
 );
 
 create table productos(
-id_productos int primary key auto_increment not null,
+id_producto int primary key auto_increment not null,
 nom_producto varchar(50) not null,
 precio_producto decimal(10,2) not null,
 info_producto text(100)
@@ -38,7 +39,7 @@ id_usu int,
 id_prod int,
 cantidad int not null,
 foreign key (id_usu) references usuarios(id_usuario),
-foreign key (id_prod) references productos(id_productos)
+foreign key (id_prod) references productos(id_producto)
 );
 
 create table MetodoPago(
@@ -68,12 +69,15 @@ id_ord int,
 id_prod int,
 cantidad int not null,
 precio decimal(10,2) not null,
-foreign key (id_prod) references productos(id_productos),
+foreign key (id_prod) references productos(id_producto),
 foreign key (id_ord) references orden(id_orden)
 );
 
-create table reportados(
+create table reportes(
 id_reporte int primary key auto_increment not null,
+id_usu int,
 id_prod int,
-foreign key (id_prod) references productos(id_productos)
+foreign key (id_prod) references productos(id_producto),
+foreign key (id_usu) references usuarios(id_usuario)
 );
+
