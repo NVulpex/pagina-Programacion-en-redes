@@ -36,9 +36,9 @@ class usuarios extends Migrations
                 'constraint' => 30,
                 'null' => false
             ],
-            $this->froge->addKey('id_usuario', true),
-            $this->froge->createTable('usuarios')
         ]);
+        $this->froge->addKey('id_usuario', true);
+        $this->froge->createTable('usuarios');
     }
 
     public function down(){

@@ -30,8 +30,11 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/contacto', 'Home::contacto');
 
-$routes->get('/inicio', 'ContactoController::index');
+$routes->get('/login', 'ContactoController::login');
+$routes->post('/login', 'ContactoController::loginPost');
+$routes->get('/inicio', 'ContactoController::inicio');
 $routes->get('/computadoras', 'ContactoController::computadora');
 $routes->get('/celulares', 'ContactoController::celular');
 $routes->get('/robotica', 'ContactoController::robotica');

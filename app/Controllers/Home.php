@@ -1,14 +1,16 @@
-<?php
+<?php namespace App\Controllers;
 
-namespace App\Controllers;
+use App\Models\usuariosModel;
 
 class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        return view('login');
     }
     public function contacto(){
-        return view('contacto');
+        $usuarios = new usuariosModel();
+        $datos = $usuarios->mostrarUsuarios();
+        print_r($datos);
     }
 }

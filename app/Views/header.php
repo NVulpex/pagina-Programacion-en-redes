@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
     <body>
-    <div class="container">
+        <div class="container">
             <nav class="nav-main">
                 <a href="<?php echo base_url();?>inicio">
                     <img src="<?php echo base_url();?>public/Img/Logo2.png" alt="Tvulpis logo" class="nav-brand" >
-                </a>    
+                </a>

@@ -28,9 +28,11 @@ foreign key (id_usu) references usuarios(id_usuario)
 
 create table productos(
 id_producto int primary key auto_increment not null,
+id_usu int,
 nom_producto varchar(50) not null,
 precio_producto decimal(10,2) not null,
-info_producto text(100)
+info_producto text(100),
+foreign key (id_usu) references usuarios(id_usuario)
 );
 
 create table carrito(
@@ -42,15 +44,15 @@ foreign key (id_usu) references usuarios(id_usuario),
 foreign key (id_prod) references productos(id_producto)
 );
 
-create table MetodoPago(
+create table metodoPago(
 id_MP int primary key auto_increment not null,
 nombre varchar(30)
 );
 
-insert into MetodoPago(nombre) value('credito');
-insert into MetodoPago(nombre) value('paypal');
-insert into MetodoPago(nombre) value('efectivo');
-insert into MetodoPago(nombre) value('otro');
+insert into metodoPago(nombre) value('credito');
+insert into metodoPago(nombre) value('paypal');
+insert into metodoPago(nombre) value('efectivo');
+insert into metodoPago(nombre) value('otro');
 
 create table orden(
 id_orden int primary key auto_increment not null,
@@ -59,11 +61,11 @@ id_mp int,
 id_dom int,
 total decimal(10,2) not null,
 foreign key (id_usu) references usuarios(id_usuario),
-foreign key (id_mp) references MetodoPago(id_MP),
+foreign key (id_mp) references metodoPago(id_MP),
 foreign key (id_dom) references domicilios(id_domicilio)
 );
 
-create table detalle_orden(
+create table detalleOrden(
 id_DO int primary key auto_increment not null,
 id_ord int,
 id_prod int,
@@ -80,4 +82,13 @@ id_prod int,
 foreign key (id_prod) references productos(id_producto),
 foreign key (id_usu) references usuarios(id_usuario)
 );
-
+/*
+drop table reportes;
+drop table detalleOrden;
+drop table orden;
+drop table metodoPago;
+drop table carrito;
+drop table productos;
+drop table domicilios;
+drop table usuarios;
+*/
