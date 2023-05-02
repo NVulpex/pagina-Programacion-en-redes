@@ -1,4 +1,4 @@
-            <div class="opciones-cards">
+            <div class="opciones-cards-banner">
                 <a href="<?php echo base_url();?>gabinetes">
                     <div class="cards-banners">
                         <h3>Gabinetes</h3>

@@ -159,3 +159,35 @@ footer{
     background-color: #ac4a00;
 }
 
+.opciones-cards-banner{
+    display: grid;
+    grid-template-columns: none;
+}
+
+.opciones-cards-banner img{
+    width: 90%;
+    height: 180px;
+    margin: 10px;
+}
+
+.opciones-cards-banner h3{
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.opciones-cards-banner a{
+    margin-top: 25px;
+    margin-right: 80px;
+    margin-left: 80px;
+    font-size: 10px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+
+.opciones-cards-banner a:hover{
+    transform: scale(1.07);
+}

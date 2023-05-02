@@ -1,0 +1,509 @@
+ERROR - 2023-05-02 12:45:29 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'vulpisbd' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'vulpisbd', 3306, '', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'vulpisbd' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#3 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#4 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-02 12:45:29 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'vulpisbd'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios')
+ 3 APPPATH\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->contacto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 12:45:44 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'vulpisbd' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'vulpisbd', 3306, '', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'vulpisbd' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#3 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#4 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-02 12:45:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'vulpisbd'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios')
+ 3 APPPATH\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->contacto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 12:47:22 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'vulpisbd' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'vulpisbd', 3306, '', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'vulpisbd' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#3 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#4 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-05-02 12:47:22 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'vulpisbd'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios')
+ 3 APPPATH\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->contacto()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 12:49:38 --> mysqli_sql_exception: Table 'vulpisbd.usuarios' doesn't exist in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 12:49:38 --> Table 'vulpisbd.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM usuarios', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM usuarios')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM usuarios')
+ 4 APPPATH\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios')
+ 5 APPPATH\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->contacto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 12:49:50 --> mysqli_sql_exception: Table 'vulpisbd.usuarios' doesn't exist in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 12:49:50 --> Table 'vulpisbd.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM usuarios', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM usuarios')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM usuarios')
+ 4 APPPATH\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios')
+ 5 APPPATH\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->contacto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 13:08:32 --> Cannot declare class App\Database\Migrations\usuarios, because the name is already in use
+in APPPATH\Database\Migrations\2023-05-02-125114_Carrito.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-05-02 13:13:21 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:14:24 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:17:06 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:18:10 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:20:28 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:22:30 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:24:53 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(29): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:25:13 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:25:39 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:26:25 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:27:24 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:31:18 --> mysqli_sql_exception: Table 'vulpisbd.usuarios' doesn't exist in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\plantilla\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\plantilla\app\Database\Seeds\usuariosSeeder.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\plantilla\system\Database\Seeder.php(146): App\Database\Seeds\usuariosSeeder->run()
+#6 C:\xampp\htdocs\plantilla\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-05-02 13:31:51 --> mysqli_sql_exception: Failed to open the referenced table 'usuarios' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125114_Carrito.php(28): CodeIgniter\Database\Forge->createTable('carrito')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:36:11 --> mysqli_sql_exception: Table 'vulpisbd.usuarios' doesn't exist in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM u...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM u...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM u...')
+#3 C:\xampp\htdocs\plantilla\app\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM u...')
+#4 C:\xampp\htdocs\plantilla\app\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\Home->contacto()
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 13:36:11 --> Table 'vulpisbd.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM usuarios', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM usuarios')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM usuarios')
+ 4 APPPATH\Models\usuariosModel.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM usuarios')
+ 5 APPPATH\Controllers\Home.php(13): App\Models\usuariosModel->mostrarUsuarios()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->contacto()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 13:52:09 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(33): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:53:39 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(33): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:53:58 --> mysqli_sql_exception: Column 'id_ord' cannot be NOT NULL: needed in a foreign key constraint 'detalleOrden_id_ord_foreign' SET NULL in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(33): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:56:18 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:57:40 --> mysqli_sql_exception: Column 'id_ord' cannot be NOT NULL: needed in a foreign key constraint 'detalleOrden_id_ord_foreign' SET NULL in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(33): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:57:54 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:58:08 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 13:58:19 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 14:00:02 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 14:00:16 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-02 15:30:42 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\plantilla\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\plantilla\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(877): App\Database\Migrations\usuarios->up()
+#6 C:\xampp\htdocs\plantilla\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\plantilla\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}

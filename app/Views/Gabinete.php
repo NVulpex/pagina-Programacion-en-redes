@@ -1,4 +1,4 @@
-            <div class="opciones-cards">
+            <div class="opciones-cards-banner">
                 <div class="cards-shop"> 
                     <a href="#">
                         <img src="" alt="">

@@ -1,4 +1,4 @@
-            <div class="opciones-cards">
+            <div class="opciones-cards-banner">
                 <a href="#">
                     <div class="cards-banners">
                         <h3>Placas y protoboards</h3>
