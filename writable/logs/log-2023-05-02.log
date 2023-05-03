@@ -1,0 +1,80 @@
+ERROR - 2023-05-02 21:54:06 --> mysqli_sql_exception: Unknown column 'id_libro' in 'where clause' in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ta...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ta...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ta...')
+#3 C:\xampp\htdocs\plantilla\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ta...', Array, false)
+#4 C:\xampp\htdocs\plantilla\app\Database\Seeds\calzadoSeeder.php(7): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\plantilla\system\Database\Seeder.php(146): App\Database\Seeds\calzadoSeeder->run()
+#6 C:\xampp\htdocs\plantilla\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\plantilla\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#8 C:\xampp\htdocs\plantilla\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#9 C:\xampp\htdocs\plantilla\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2023-05-02 23:20:41 --> Undefined variable $datos
+in APPPATH\Views\calzado\inicioCalzado.php on line 453.
+ 1 APPPATH\Views\calzado\inicioCalzado.php(453): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\plantilla\\app\\Views\\calzado\\inicioCalzado.php', 453)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\plantilla\\app\\Views\\calzado\\inicioCalzado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('calzado/inicioCalzado', [], true)
+ 5 APPPATH\Controllers\CalzadoController.php(9): view('calzado/inicioCalzado')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CalzadoController->indexCalzado()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CalzadoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 23:20:46 --> Undefined variable $datos
+in APPPATH\Views\calzado\inicioCalzado.php on line 453.
+ 1 APPPATH\Views\calzado\inicioCalzado.php(453): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\plantilla\\app\\Views\\calzado\\inicioCalzado.php', 453)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\plantilla\\app\\Views\\calzado\\inicioCalzado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('calzado/inicioCalzado', [], true)
+ 5 APPPATH\Controllers\CalzadoController.php(9): view('calzado/inicioCalzado')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CalzadoController->indexCalzado()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CalzadoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 23:20:58 --> Undefined variable $datos
+in APPPATH\Views\calzado\inicioCalzado.php on line 453.
+ 1 APPPATH\Views\calzado\inicioCalzado.php(453): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\plantilla\\app\\Views\\calzado\\inicioCalzado.php', 453)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\plantilla\\app\\Views\\calzado\\inicioCalzado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('calzado/inicioCalzado', [], true)
+ 5 APPPATH\Controllers\CalzadoController.php(9): view('calzado/inicioCalzado')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CalzadoController->indexCalzado()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CalzadoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-02 23:24:05 --> Undefined variable $datos
+in APPPATH\Views\calzado\inicioCalzado.php on line 453.
+ 1 APPPATH\Views\calzado\inicioCalzado.php(453): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\plantilla\\app\\Views\\calzado\\inicioCalzado.php', 453)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\plantilla\\app\\Views\\calzado\\inicioCalzado.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('calzado/inicioCalzado', [], true)
+ 5 APPPATH\Controllers\CalzadoController.php(9): view('calzado/inicioCalzado')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CalzadoController->indexCalzado()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CalzadoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-02 23:24:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-calzados' at line 1 in C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\plantilla\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\plantilla\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\plantilla\app\Models\calzadoModel.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...')
+#4 C:\xampp\htdocs\plantilla\app\Controllers\CalzadoController.php(15): App\Models\calzadoModel->mostrarCalzado()
+#5 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(934): App\Controllers\CalzadoController->calzados()
+#6 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CalzadoController))
+#7 C:\xampp\htdocs\plantilla\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\plantilla\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-02 23:24:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '-calzados' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM tabla-calzados', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tabla-calzados')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tabla-calzados')
+ 4 APPPATH\Models\calzadoModel.php(7): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tabla-calzados')
+ 5 APPPATH\Controllers\CalzadoController.php(15): App\Models\calzadoModel->mostrarCalzado()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\CalzadoController->calzados()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CalzadoController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
