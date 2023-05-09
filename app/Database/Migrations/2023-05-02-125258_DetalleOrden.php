@@ -1,8 +1,8 @@
 <?php namespace App\Database\Migrations;
 
-use CodeIgniter\Database\Migratinos;
+use CodeIgniter\Database\Migration;
 
-class usuarios extends Migrations
+class detalleOrden extends Migration
 {
     public function up(){
         $this->forge->addField([
@@ -12,10 +12,12 @@ class usuarios extends Migrations
                 'null' => false
             ],
             'id_ord' =>[
-                'type' => 'int'
+                'type' => 'int',
+                'null' => true
             ],
             'id_prod' =>[
-                'type' => 'int'
+                'type' => 'int',
+                'null' => true
             ],
             'cantidad' =>[
                 'type' => 'int',
@@ -27,10 +29,10 @@ class usuarios extends Migrations
                 'null' => false
             ],
         ]);
-        $this->froge->addKey('id_orden', true);
-        $this->froge->addForeingKey('id_ord', 'orden', 'id_orden', 'CASCADE', 'SET NULL');
-        $this->froge->addForeignKey('id_prod', 'productos', 'id_producto', 'CASCADE', 'SET NULL');
-        $this->froge->createTable('detalleOrden');
+        $this->forge->addKey('id_DO', true);
+        $this->forge->addForeignKey('id_ord', 'orden', 'id_orden', 'CASCADE', 'SET NULL');
+        $this->forge->addForeignKey('id_prod', 'productos', 'id_producto', 'CASCADE', 'SET NULL');
+        $this->forge->createTable('detalleOrden');
     }
 
     public function down(){

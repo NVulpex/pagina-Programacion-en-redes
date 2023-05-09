@@ -2,7 +2,7 @@
 
 use CodeIgniter\Database\Migration;
 
-class usuarios extends Migration
+class productos extends Migration
 {
     public function up(){
         $this->forge->addField([

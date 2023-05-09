@@ -1,0 +1,90 @@
+ERROR - 2023-05-09 12:45:38 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'vulpisbd' in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'vulpisbd', 3306, '', 0)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\pagina-Programacion-en-redes\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'vulpisbd' in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(1409): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(1428): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+CRITICAL - 2023-05-09 12:47:17 --> Cannot declare class App\Database\Migrations\usuarios, because the name is already in use
+in APPPATH\Database\Migrations\2023-05-02-125124_DetalleOrden.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-05-09 12:48:58 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(877): App\Database\Migrations\detalleOrden->up()
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\pagina-Programacion-en-redes\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-05-09 12:57:57 --> Class App\Database\Migrations\detalleOrden contains 2 abstract methods and must therefore be declared abstract or implement the remaining methods (CodeIgniter\Database\Migration::up, CodeIgniter\Database\Migration::down)
+in APPPATH\Database\Migrations\2023-05-02-125124_DetalleOrden.php on line 5.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2023-05-09 12:59:05 --> mysqli_sql_exception: Failed to open the referenced table 'orden' in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `d...', 0)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `d...')
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `d...')
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `d...')
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Database\Migrations\2023-05-02-125124_DetalleOrden.php(34): CodeIgniter\Database\Forge->createTable('detalleOrden')
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(877): App\Database\Migrations\detalleOrden->up()
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\pagina-Programacion-en-redes\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-09 13:08:35 --> mysqli_sql_exception: Column 'id_prod' cannot be NOT NULL: needed in a foreign key constraint 'orden_id_prod_foreign' SET NULL in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `o...', 0)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `o...')
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `o...')
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `o...')
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Database\Migrations\2023-05-02-125239_Orden.php(33): CodeIgniter\Database\Forge->createTable('orden')
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(877): App\Database\Migrations\orden->up()
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\pagina-Programacion-en-redes\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-05-09 13:14:37 --> mysqli_sql_exception: Incorrect table definition; there can be only one auto column and it must be defined as a key in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `r...', 0)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `r...')
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `r...')
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `r...')
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Database\Migrations\2023-05-02-125430_Reportes.php(26): CodeIgniter\Database\Forge->createTable('reportes')
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(877): App\Database\Migrations\reportes->up()
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\pagina-Programacion-en-redes\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}

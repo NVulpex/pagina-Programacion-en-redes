@@ -1,8 +1,8 @@
 <?php namespace App\Database\Migrations;
 
-use CodeIgniter\Database\Migratinos;
+use CodeIgniter\Database\Migration;
 
-class usuarios extends Migrations
+class domicilio extends Migration
 {
     public function up(){
         $this->forge->addField([
@@ -13,6 +13,7 @@ class usuarios extends Migrations
             ],
             'id_usu' =>[
                 'type' =>'INT',
+                'null' => true
             ],
             'calle' =>[
                 'type' => 'varchar',
@@ -48,9 +49,9 @@ class usuarios extends Migrations
                 'null' => false
             ],
         ]);
-        $this->froge->addKey('id_domicilio', true);
-        $this->froge->addForeingKey('id_usu', 'usuarios', 'id_usuario', 'CASCADE', 'CASCADE');
-        $this->froge->createTable('domicilios');
+        $this->forge->addKey('id_domicilio', true);
+        $this->forge->addForeignKey('id_usu', 'usuarios', 'id_usuario', 'CASCADE', 'CASCADE');
+        $this->forge->createTable('domicilios');
     }
 
     public function down(){

@@ -2,7 +2,7 @@
 
 use CodeIgniter\Database\Migration;
 
-class usuarios extends Migration
+class orden extends Migration
 {
     public function up(){
         $this->forge->addField([
@@ -12,13 +12,16 @@ class usuarios extends Migration
                 'null' => false
             ],
             'id_usu' =>[
-                'type' => 'int'
+                'type' => 'int',
+                'null' => true
             ],
             'id_prod' =>[
-                'type' => 'int'
+                'type' => 'int',
+                'null' => true
             ],
             'id_mp' =>[
-                'type' => 'int'
+                'type' => 'int',
+                'null' => true
             ],
             'total' =>[
                 'type' => 'decimal',
