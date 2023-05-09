@@ -1,6 +1,6 @@
 <?php namespace App\Database\Seeds;
 
-class usuariosSeeder extends \CodeIgniter\Database\Seeder{
+class adminSeeder extends \CodeIgniter\Database\Seeder{
 
     public function run(){
         $data = [
