@@ -16,14 +16,20 @@
                     <div class="cont-form"><!--
                         <img src="<?php echo base_url();?>public/Img/Logo2.png" alt="Tvulpis logo" class="nav-brand">
                         <br>-->
-                        <h3>Inicio de sesion</h3>
-                        <label for="usuario">Usuario</label>
-                        <input type="text" name="usuario" required>
-                        <br>
-                        <label for="password">Contraseña</label>
-                        <input type="password" name="password" required>
-                        <br>
-                        <button>Entrar</button>
+                        <div>
+                            <h3>Inicio de sesion</h3>
+                        </div>
+                        <div>
+                            <label for="usuario">Usuario</label>
+                            <input type="text" name="usuario" required>
+                        </div>
+                        <div>
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" required>
+                        </div>
+                        <div>
+                            <button>Entrar</button>
+                        </div>
                     </div>
                     
                 </div>
