@@ -20,19 +20,21 @@
                             <h3>Inicio de sesion</h3>
                         </div>
                         <div>
-                            <label for="usuario">Usuario</label>
-                            <input type="text" name="usuario" required>
+                            <input type="text" placeholder="Usuario o Email" name="usuario" required>
                         </div>
                         <div>
-                            <label for="password">Contraseña</label>
-                            <input type="password" name="password" required>
+                            <input type="password" placeholder="Contraseña" name="password" required>
+                            <div>
+                                <a href="#">Has olvidado tu contraseña?</a>
+                            </div>
                         </div>
                         <div>
-                            <button>Entrar</button>
+                            <button>Iniciar sesion</button>
+                            <p>No tienes cuenta? <a href="#">Crea una aqui</a></p>
                         </div>
                     </div>
-                    
                 </div>
+                
             </form>
         </div>
     </body>

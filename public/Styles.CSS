@@ -14,6 +14,17 @@ body{
     background-size: auto;
 }
 
+input{
+    background-color: transparent;
+    border-color: #ac4a00;
+    border-top: none;
+    border-right: none;
+    color: #f1d989a1;
+}
+input::placeholder{
+    color: #f1d989a1;
+}
+
 label{
     color: #f1d989;
     text-decoration: none;
@@ -34,6 +45,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: #ecbd22;
+}
+
 h3{
     color: #f1d989;
     text-decoration: none; 
@@ -47,9 +62,9 @@ img{
     border-radius: 30px;
 }
 
-form{
-    padding-left: 33%;
-    padding-right: 33%;
+p{
+    color: #f1d989;
+    text-decoration: none;
 }
 /*
 footer{
@@ -65,21 +80,28 @@ footer{
 
 /*Formulario*/
 
+form{
+    padding-left: 33%;
+    padding-right: 33%;
+}
+
 .formulario{
+    min-height: 40vh;
     margin-top: 10%;
     border-radius: 50px;
-    padding: 10px;
-    background-color: #ac4a00;
-    height: 600px;
+    border-style:solid;
+    border-top: hidden;
+    border-bottom: hidden;
+    border-color: #9b4808;
+    text-align: left;
     display: flex;
-    text-align: center;
+    align-items:flex-start;
+    flex-direction: column;
 }
 
 .cont-form{
-    padding-left: 25%;
-    padding-right: 25%;
-    /*padding-top: 45%;*/
-    grid-template-rows: repeat(4, 1fr);
+    margin-top: 10%;
+    margin-left: 10%;
 }
 
 /*Scrollbar*/
