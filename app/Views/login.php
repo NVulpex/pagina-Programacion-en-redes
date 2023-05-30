@@ -17,20 +17,20 @@
                         <img src="<?php echo base_url();?>public/Img/Logo2.png" alt="Tvulpis logo" class="nav-brand">
                         <br>-->
                         <div>
-                            <h3>Inicio de sesion</h3>
+                            <h1>Inicio de sesion</h1>
                         </div>
                         <div>
-                            <input type="text" placeholder="Usuario o Email" name="usuario" required>
+                            <input type="text" placeholder="Usuario o Email" name="usuario" required<?php ?>>
                         </div>
                         <div>
                             <input type="password" placeholder="Contraseña" name="password" required>
-                            <div>
+                            <div class="link-contraseña">
                                 <a href="#">Has olvidado tu contraseña?</a>
                             </div>
                         </div>
                         <div>
-                            <button>Iniciar sesion</button>
-                            <p>No tienes cuenta? <a href="#">Crea una aqui</a></p>
+                            <button href="<?php echo base_url('/inicio')?>">Iniciar sesion</button>
+                            <p>No tienes cuenta? <a class="link-registro" href="#">Crea una aqui</a></p>
                         </div>
                     </div>
                 </div>

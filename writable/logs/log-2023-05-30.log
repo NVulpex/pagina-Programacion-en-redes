@@ -1,0 +1,24 @@
+CRITICAL - 2023-05-30 14:16:49 --> Class "App\Models\usuariosModel" not found
+in APPPATH\Controllers\ContactoController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 14:18:25 --> Class "App\Models\usuariosModel" not found
+in APPPATH\Controllers\ContactoController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 14:19:16 --> Class "App\Controllers\loginModel" not found
+in APPPATH\Controllers\ContactoController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 14:19:59 --> Class "App\Controllers\loginModel" not found
+in APPPATH\Controllers\ContactoController.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

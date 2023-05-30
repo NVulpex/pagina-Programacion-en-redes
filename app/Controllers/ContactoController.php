@@ -54,7 +54,7 @@ class ContactoController extends BaseController
     public function loginPost(){
         $usuario = $this->request->getPost('usuario');
         $password = $this->request->getPost('password');
-        $Usuario = new usuariosModel();
+        $Usuario = new loginModel();
 
         $datosUsuario = $Usuario->obtenerUsuario(['usuario' => $usuario]);
 
