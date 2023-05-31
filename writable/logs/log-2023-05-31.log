@@ -1,0 +1,184 @@
+ERROR - 2023-05-31 17:34:14 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Models\loginModel.php(9): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Controllers\ContactoController.php(59): App\Models\loginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-31 17:34:14 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'TVulpis\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'TVulpis\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'TVulpis\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\loginModel.php(9): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\ContactoController.php(59): App\Models\loginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-31 17:35:33 --> mysqli_sql_exception: Unknown column 'usuario' in 'where clause' in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Models\loginModel.php(9): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Controllers\ContactoController.php(59): App\Models\loginModel->obtenerUsuario(Array)
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-31 17:35:33 --> Unknown column 'usuario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'TVulpis\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'TVulpis\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'TVulpis\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:', [...], false)
+ 5 APPPATH\Models\loginModel.php(9): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\ContactoController.php(59): App\Models\loginModel->obtenerUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 17:36:41 --> Undefined array key "password"
+in APPPATH\Controllers\ContactoController.php on line 61.
+ 1 APPPATH\Controllers\ContactoController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "password"', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 17:59:12 --> Class "App\Controllers\session" not found
+in APPPATH\Controllers\ContactoController.php on line 66.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 18:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 18:49:28 --> Undefined variable $datosUsuario
+in APPPATH\Views\login.php on line 33.
+ 1 APPPATH\Views\login.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datosUsuario', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:50:40 --> Undefined variable $usuario
+in APPPATH\Views\login.php on line 19.
+ 1 APPPATH\Views\login.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:59:51 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\login.php on line 37.
+ 1 APPPATH\Views\login.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 18:59:59 --> Call to undefined function App\Controllers\getPost()
+in APPPATH\Views\login.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('login')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:00:19 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\login.php on line 37.
+ 1 APPPATH\Views\login.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:01:26 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\login.php on line 18.
+ 1 APPPATH\Views\login.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:02:08 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\login.php on line 18.
+ 1 APPPATH\Views\login.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:02:22 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\login.php on line 18.
+ 1 APPPATH\Views\login.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php', 18)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Views\\login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('login')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-05-31 19:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 19:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 19:22:39 --> Undefined array key 1
+in APPPATH\Controllers\ContactoController.php on line 61.
+ 1 APPPATH\Controllers\ContactoController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 19:26:50 --> Undefined array key 4
+in APPPATH\Controllers\ContactoController.php on line 61.
+ 1 APPPATH\Controllers\ContactoController.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

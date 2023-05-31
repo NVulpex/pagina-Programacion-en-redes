@@ -1,6 +1,6 @@
 <?php namespace App\Controllers;
 
-    use App\Models\usuariosModel;
+    use App\Models\loginModel;
 
 class ContactoController extends BaseController
 {
@@ -56,20 +56,24 @@ class ContactoController extends BaseController
         $password = $this->request->getPost('password');
         $Usuario = new loginModel();
 
-        $datosUsuario = $Usuario->obtenerUsuario(['usuario' => $usuario]);
-
-        if (count($datosUsuario) > 0 && password_verify($password, $datosUsuario[0]['password'])){
-
+        $datosUsuario = $Usuario->obtenerUsuario(['nomu_usuario' => $usuario]);
+        
+        if (count($datosUsuario) > 0 && password_verify($password, $datosUsuario[0]['pass_usuario'])){
             $data = [
-                "usuario" => $datosUsuario[0]['nomu_usuario'],
-                "Type" => $datosUsuario[0]['type']
-
+                "nomu_usuario" => $datosUsuario[0]['nomu_usuario'],
+                "tipo" => $datosUsuario[0]['tipo']
             ];
-            $session = new session();
+            $session = session();
             $session->set($data);
             return redirect()->to(base_url('/inicio'));
         } else{
             return redirect()->to(base_url('/'));
         }
+    }
+     
+    public function salir(){
+        $session = session();
+        $session->destroy();
+        return redirect()->to(base_url('/'));
     }
 }

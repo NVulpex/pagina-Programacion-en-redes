@@ -38,15 +38,16 @@ label{
 }
 
 button{
-    background-color:#f1d989;
+    background-color:#594433;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     font-size: 17px;
+    color: #f1d989;
 }
 
 button:hover{
-    color: #ac4a00;
+    color: #ecbd22;
     text-decoration: none;
 }
 
@@ -92,9 +93,9 @@ footer{
 /*Formulario*/
 
 form{
-    padding-left: 33%;
-    padding-right: 33%;
-    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .link-registro{
@@ -103,6 +104,7 @@ form{
 
 .formulario{
     min-height: 40vh;
+    min-width: 500px;
     margin-top: 10%;
     border-radius: 50px;
     border-style:solid;
@@ -111,7 +113,7 @@ form{
     border-color: #9b4808;
     text-align: left;
     display: flex;
-    align-items:flex-start;
+    align-items:center;
     flex-direction: column;
 }
 
@@ -132,8 +134,10 @@ form{
 }
 
 .cont-form{
-    margin-top: 7%;
-    margin-left: 10%;
+    padding-top: 7.5%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
 }
 
 .link-contraseña a{

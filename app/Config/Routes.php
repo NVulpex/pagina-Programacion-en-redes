@@ -32,7 +32,7 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/contacto', 'Home::contacto');
 
-$routes->get('/login', 'ContactoController::login');
+$routes->get('/', 'ContactoController::login');
 $routes->post('/login', 'ContactoController::loginPost');
 $routes->get('/inicio', 'ContactoController::inicio');
 $routes->get('/computadoras', 'ContactoController::computadora');

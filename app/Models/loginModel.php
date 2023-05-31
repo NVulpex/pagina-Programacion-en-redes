@@ -17,4 +17,4 @@ class loginModel extends Model{
         $usuarios = $this->db->query('SELECT * FROM usuarios');
         return $usuarios->getResult();
     }
-}
+} 

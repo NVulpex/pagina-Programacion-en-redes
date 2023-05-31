@@ -36,6 +36,10 @@ class usuarios extends Migration
                 'constraint' => 30,
                 'null' => false
             ],
+            'tipo' =>[
+                'type' => 'varchar',
+                'constraint' => 255,
+            ],
         ]);
         $this->forge->addKey('id_usuario', true);
         $this->forge->createTable('usuarios');
