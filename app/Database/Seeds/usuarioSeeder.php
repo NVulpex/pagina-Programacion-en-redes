@@ -5,9 +5,9 @@ class usuarioSeeder extends \CodeIgniter\Database\Seeder{
     public function run(){
         $nombre = "Uriel";
         $apellido = "Ludi";
-        $usuario = "TVulpis";
+        $usuario = "admin";
         $email = "TVulpis@gmail.com";
-        $password = password_hash("TVulpisAdmin123", PASSWORD_DEFAULT);
+        $password = password_hash("admin", PASSWORD_DEFAULT);
         $tipo = "admin";
         
         $data = [

@@ -5,12 +5,14 @@ class loginModel extends Model{
 
     public function obtenerUsuario($data){
         $Usuario = $this->db->table('usuarios');
-        $Usuario->where($data);
+        $Usuario->where('nomu_usuario',$data);
         return $Usuario->get()->getResultArray();
     }
 
-    public function revisarExistentes($data){
-        
+    public function obtenerPassword($data){
+        $Usuario = $this->db->table('usuarios');
+        $Usuario->where('nomu_usuario',$data);
+        return $Usuario->get()->getResultArray()[4];
     }
 
     public function mostrarUsuarios(){

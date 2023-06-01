@@ -13,24 +13,30 @@
 
     <body>
         <div class="container">
-            <form action="<?php echo base_url('/login')?>" method="POST" autocomplete="off">
+            <form action="<?php echo base_url('/registro')?>" method="POST" autocomplete="off">
                 <div class="formulario">
                     <div class="cont-form">
                         <div>
-                            <h1>Inicio de sesion</h1>
+                            <h1>Registro</h1>
                         </div>
                         <div>
-                            <input type="text" placeholder="Usuario o Email" name="usuario" required="">
+                            <input type="text" placeholder="Nombre" name="nombre" required="">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="apellido" name="apellido" required="">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email" name="email" required="">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Usuario" name="usuario" required="">
                         </div>
                         <div>
                             <input type="password" placeholder="Contraseña" name="password" required="">
                         </div>
-                        <div class="link-contraseña">
-                            <a href="#">Has olvidado tu contraseña?</a>
-                        </div>
                         <div>
                             <button>Iniciar sesion</button>
-                            <p>No tienes cuenta? <a class="link-registro" href="<?php echo base_url('/registro')?>">Crea una aqui</a></p>
+                            <p>Ya tienes cuenta? <a class="link-registro" href="<?php echo base_url('/')?>">inicia sesion aqui</a></p>
                         </div>
                     </div>
                 </div>

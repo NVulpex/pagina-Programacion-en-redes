@@ -33,6 +33,8 @@ $routes->get('/', 'Home::index');
 $routes->get('/contacto', 'Home::contacto');
 
 $routes->get('/', 'ContactoController::login');
+$routes->get('/registro', 'ContactoController::registro');
+$routes->post('/registro', 'ContactoController::registroPost');
 $routes->post('/login', 'ContactoController::loginPost');
 $routes->get('/inicio', 'ContactoController::inicio');
 $routes->get('/computadoras', 'ContactoController::computadora');

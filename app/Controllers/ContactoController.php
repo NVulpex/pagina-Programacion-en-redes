@@ -1,12 +1,17 @@
 <?php namespace App\Controllers;
 
     use App\Models\loginModel;
+    use App\Models\registroModel;
 
 class ContactoController extends BaseController
 {
     public function login()
     {
         echo view('Views/login');
+    }
+
+    public function registro(){
+        echo view('Views/registro');
     }
 
     public function inicio()
@@ -51,14 +56,31 @@ class ContactoController extends BaseController
         echo view('Views/Gabinete');
     }
 
-    public function loginPost(){
-        $usuario = $this->request->getPost('usuario');
-        $password = $this->request->getPost('password');
-        $Usuario = new loginModel();
+    public function registroPost(){
+        $data = $_POST;
+        $login = new loginModel();
+        $registro = new registroModel();
 
-        $datosUsuario = $Usuario->obtenerUsuario(['nomu_usuario' => $usuario]);
+        if($login->obtenerUsuario(['nomu_usuario' => $data['usuario']]) != null){
+            echo("Usuario ya existente");
+        }
+        else;
+        print_r($_POST['usuario']);
+        $password = password_hash($data['password'], PASSWORD_DEFAULT);
+
+        $data['password'] = $password;
+        $registro->crearUsuario($data);
+    }
+
+    public function loginPost(){
+        $data = $_POST;
+        $Usuario = new loginModel();
+        $option = ['cost0' => 11];
+        $datosUsuario = $Usuario->obtenerUsuario(['nomu_usuario' => $data['usuario']]);
         
-        if (count($datosUsuario) > 0 && password_verify($password, $datosUsuario[0]['pass_usuario'])){
+        $hash = $datosUsuario[0]['pass_usuario'];
+
+        if (count($datosUsuario) > 0 && password_verify($data['password'], $hash)){
             $data = [
                 "nomu_usuario" => $datosUsuario[0]['nomu_usuario'],
                 "tipo" => $datosUsuario[0]['tipo']
@@ -67,7 +89,10 @@ class ContactoController extends BaseController
             $session->set($data);
             return redirect()->to(base_url('/inicio'));
         } else{
-            return redirect()->to(base_url('/'));
+            echo($data['password']."     ");
+            echo(password_hash($data['password'], PASSWORD_DEFAULT)."      ");
+            print_r($datosUsuario[0]['pass_usuario']);
+            //return redirect()->to(base_url('/'));
         }
     }
      
