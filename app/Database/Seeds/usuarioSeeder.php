@@ -3,7 +3,7 @@
 class usuarioSeeder extends \CodeIgniter\Database\Seeder{
 
     public function run(){
-        $nombre = "Uriel";
+        $nombre = "uriel";
         $apellido = "Ludi";
         $usuario = "admin";
         $email = "TVulpis@gmail.com";

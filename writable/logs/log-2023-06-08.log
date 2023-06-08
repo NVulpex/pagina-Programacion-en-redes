@@ -1,0 +1,105 @@
+CRITICAL - 2023-06-08 12:29:00 --> Undefined variable $totalTime
+in SYSTEMPATH\Debug\Toolbar\Views\toolbar.tpl.php on line 40.
+ 1 SYSTEMPATH\Debug\Toolbar\Views\toolbar.tpl.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalTime', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\system\\Debug\\Toolbar\\Views\\toolbar.tpl.php', 40)
+ 2 SYSTEMPATH\Debug\Toolbar.php(511): include('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\system\\Debug\\Toolbar\\Views\\toolbar.tpl.php')
+ 3 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 4 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 5 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 6 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger('pre_system')
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:35:40 --> Undefined array key "tipo"
+in APPPATH\Models\registroModel.php on line 13.
+ 1 APPPATH\Models\registroModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipo"', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Models\\registroModel.php', 13)
+ 2 APPPATH\Controllers\ContactoController.php(72): App\Models\registroModel->crearUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->registroPost()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-08 12:47:11 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\pagina-Programacion-en-redes\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Models\registroModel.php(16): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\pagina-Programacion-en-redes\app\Controllers\ContactoController.php(66): App\Models\registroModel->crearUsuario(Array)
+#6 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(934): App\Controllers\ContactoController->registroPost()
+#7 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+#8 C:\xampp\htdocs\pagina-Programacion-en-redes\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\pagina-Programacion-en-redes\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-08 12:47:11 --> Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `password`) VALUES (\'Uriel\', \'Ludi\', \'ludiuriel@gmail.com\', \'Luriel\', \'$2y$10$TUUMrX2pEYsFIzt7lqn0HerFXlbWTGQiGEasB8tivbo1sw4sZl7YK\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `password`) VALUES (\'Uriel\', \'Ludi\', \'ludiuriel@gmail.com\', \'Luriel\', \'$2y$10$TUUMrX2pEYsFIzt7lqn0HerFXlbWTGQiGEasB8tivbo1sw4sZl7YK\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `password`) VALUES (\'Uriel\', \'Ludi\', \'ludiuriel@gmail.com\', \'Luriel\', \'$2y$10$TUUMrX2pEYsFIzt7lqn0HerFXlbWTGQiGEasB8tivbo1sw4sZl7YK\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `usuario`, `password`) VALUES (:nombre:, :apellido:, :email:, :usuario:, :password:)', [...], false)
+ 5 APPPATH\Models\registroModel.php(16): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\ContactoController.php(66): App\Models\registroModel->crearUsuario([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->registroPost()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:48:35 --> Undefined array key 0
+in APPPATH\Models\registroModel.php on line 8.
+ 1 APPPATH\Models\registroModel.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Models\\registroModel.php', 8)
+ 2 APPPATH\Controllers\ContactoController.php(66): App\Models\registroModel->crearUsuario([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->registroPost()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:51:40 --> Undefined variable $data
+in APPPATH\Models\registroModel.php on line 16.
+ 1 APPPATH\Models\registroModel.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Models\\registroModel.php', 16)
+ 2 APPPATH\Controllers\ContactoController.php(66): App\Models\registroModel->crearUsuario('uriel', 'ludi', 'luriel', 'ludiuriel@gmail.com', '$2y$10$pPf280TWxCIdJIPs0hG59ONaE5iJ.qMJk53J3GwLbd/LX7Jws3fe2')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->registroPost()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:57:41 --> Undefined array key "email"
+in APPPATH\Controllers\ContactoController.php on line 77.
+ 1 APPPATH\Controllers\ContactoController.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:58:05 --> Undefined array key 0
+in APPPATH\Controllers\ContactoController.php on line 90.
+ 1 APPPATH\Controllers\ContactoController.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php', 90)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:59:25 --> Undefined array key 0
+in APPPATH\Controllers\ContactoController.php on line 78.
+ 1 APPPATH\Controllers\ContactoController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:59:39 --> Undefined array key "pass_usuario"
+in APPPATH\Controllers\ContactoController.php on line 78.
+ 1 APPPATH\Controllers\ContactoController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pass_usuario"', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-08 12:59:57 --> Undefined array key 0
+in APPPATH\Controllers\ContactoController.php on line 78.
+ 1 APPPATH\Controllers\ContactoController.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php', 78)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\ContactoController->loginPost()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ContactoController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-08 13:09:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-08 14:09:31 --> syntax error, unexpected variable "$hash"
+in APPPATH\Controllers\ContactoController.php on line 78.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\pagina-Programacion-en-redes\\app\\Controllers\\ContactoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ContactoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ContactoController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\ContactoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-08 14:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-08 14:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

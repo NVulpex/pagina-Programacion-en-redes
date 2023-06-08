@@ -20,7 +20,7 @@
                             <h1>Inicio de sesion</h1>
                         </div>
                         <div>
-                            <input type="text" placeholder="Usuario o Email" name="usuario" required="">
+                            <input type="text" placeholder="Email" name="usuario" required="">
                         </div>
                         <div>
                             <input type="password" placeholder="Contraseña" name="password" required="">

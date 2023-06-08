@@ -3,16 +3,16 @@ use CodeIgniter\Model;
 
 class registroModel extends Model{
 
-    public function crearUsuario($data){
+    public function crearUsuario($nombre, $apellido, $usuario, $email, $password){
         $datos = [
-            'nom_usuario' => $data['nombre'],
-            'ape_usuario' => $data['apellido'],
-            'nomu_usuario' => $data['usuario'],
-            'email_usuario' => $data['email'],
-            'pass_usuario' => $data['password'],
-            'tipo' => $data['tipo']
+            'nom_usuario' => $nombre,
+            'ape_usuario' => $apellido,
+            'nomu_usuario' => $usuario,
+            'email_usuario' => $email,
+            'pass_usuario' => $password,
+            'tipo' => "comun"
         ];
         
-        $this->db->table('usuarios')->insert($data);
+        $this->db->table('usuarios')->insert($datos);
     }
 } 
